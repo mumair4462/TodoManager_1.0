@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optTodos"
+        android:title="Todos"
+        android:icon="@drawable/ic_checklist1"/>
+
+    <item
+        android:id="@+id/optStatistics"
+        android:title="Statistics"
+        android:icon="@drawable/ic_data_analytics"/>
+
+    <item
+        android:id="@+id/optBuildTask"
+        android:title="Task Builder"
+        android:icon="@drawable/ic_customer_support"/>
+
+</menu>

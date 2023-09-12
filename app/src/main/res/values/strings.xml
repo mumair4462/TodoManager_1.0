@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Todo Manager</string>
+
+    <string name="open_drawable">Open Drawable</string>
+    <string name="close_drawable">Close Drawable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_string">Demo String</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="back">Back</string>
+    <string name="add_a_new_habit">Add a new habit</string>
+    <string name="habit_name">Habit name</string>
+    <string name="title_here_hint">title here..</string>
+    <string name="description">Description</string>
+    <string name="more_about_habit_hint">more about habit..</string>
+    <string name="day_of_the_week">Day of the week</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="create">Create</string>
+    <string name="overall_statistics">Overall Statistics</string>
+    <string name="task_title">Task Title</string>
+    <string name="total_days">Total Days</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+    <string name="max_streak">Max Streak</string>
+    <string name="overall_progress">Overall Progress</string>
+    <string name="longest_streak">Longest Streak</string>
+    <string name="shortest_streak">Shortest Streak</string>
+    <string name="success_rate">Success Rate</string>
+    <string name="failure_rate">Failure Rate</string>
+    <string name="no_habit_funded">No habit founded</string>
+    <string name="habit_wish_list">Habit Wish list</string>
+    <string name="monday">Monday</string>
+    <string name="update_habit">Update habit</string>
+    <string name="update">Update</string>
+
+
+</resources>

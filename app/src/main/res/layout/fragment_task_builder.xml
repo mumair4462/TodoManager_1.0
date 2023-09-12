@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    tools:context=".HomeFragments.TaskBuilderFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_habit_funded"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginVertical="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/habit_wish_list"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_dark"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginVertical="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskBuilderList"
+            android:layout_below="@id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnNewTask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:pointerIcon="arrow"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_add"
+        app:tint="@android:color/white"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="ContentDescription,UnusedAttribute" />
+
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

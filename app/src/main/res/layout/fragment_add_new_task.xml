@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragments.AddNewTaskFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnBackPress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_arrow_back"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/add_task_style"
+                    android:backgroundTint="@color/white"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="30dp"
+                    android:orientation="vertical">
+
+                    <!-- title    -->
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="@string/add_a_new_habit"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="25sp"
+                        android:layout_marginBottom="10dp"
+                        android:textStyle="bold"/>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/habit_name"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary_lite_bg"
+                            android:textSize="20sp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white_lite"
+                            app:cardCornerRadius="15dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="3dp">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edtTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:paddingVertical="10dp"
+                                android:background="@drawable/input_style"
+                                android:hint="@string/title_here_hint"
+                                android:paddingHorizontal="20dp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/description"
+                            android:textColor="@color/primary_lite_bg"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white_lite"
+                            app:cardCornerRadius="15dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardElevation="3dp">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/edtDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingVertical="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:background="@drawable/input_style"
+                                android:hint="@string/more_about_habit_hint"
+                                android:paddingHorizontal="20dp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/day_of_the_week"
+                            android:textColor="@color/primary_lite_bg"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtSunday"
+                                        style="@style/Days_style"
+                                        android:tag="su"
+                                        android:text="@string/s"
+                                        android:textColor="@color/primary_lite_bg"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtMonday"
+                                        style="@style/Days_style"
+                                        android:tag="mo"
+                                        android:text="@string/m"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtTuesday"
+                                        style="@style/Days_style"
+                                        android:tag="tu"
+                                        android:text="@string/t"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtWednesday"
+                                        style="@style/Days_style"
+                                        android:tag="we"
+                                        android:text="@string/w"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtThursday"
+                                        style="@style/Days_style"
+                                        android:tag="th"
+                                        android:text="@string/t"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtFriday"
+                                        style="@style/Days_style"
+                                        android:tag="fr"
+                                        android:text="@string/f"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtSaturday"
+                                        style="@style/Days_style"
+                                        android:tag="sa"
+                                        android:text="@string/s"
+                                        android:textColor="@color/primary_lite_bg"/>
+
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            </HorizontalScrollView>
+
+
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCancel"
+                            android:text="@string/cancel"
+                            android:layout_marginEnd="15dp"
+                            style="@style/Secondary_btn_style"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCreate"
+                            android:text="@string/create"
+                            style="@style/Primary_btn_style"/>
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

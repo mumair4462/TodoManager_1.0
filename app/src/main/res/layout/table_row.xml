@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:text="@string/task_title"
+        style="@style/Table_row"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTotalDays"
+        style="@style/Table_row"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSuccessTask"
+        style="@style/Table_row"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtFailureTask"
+        style="@style/Table_row"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtMaxStreak"
+        style="@style/Table_row"/>
+</TableRow>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="primary_dark">#2188e5</color>
+    <color name="primary_lite">#2084e2</color>
+    <color name="primary">#218de8</color>
+
+    <color name="primary1_dark">#5c4ffe</color>
+    <color name="primary1_lite">#7768ff</color>
+    <color name="primary1">#6a5efc</color>
+
+    <color name="white_lite">#f8f6f7</color>
+    <color name="primary_lite_bg">#D76489AC</color>
+
+
+
+</resources>
