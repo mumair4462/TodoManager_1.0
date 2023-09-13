@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.mumairsaeed.dev.todomanager.Constants.SharePerferenceManager;
 import com.mumairsaeed.dev.todomanager.Database.TodoDBHandler;
 import com.mumairsaeed.dev.todomanager.Models.HabitModel;
 import com.mumairsaeed.dev.todomanager.R;
@@ -28,12 +29,16 @@ public class TodoAdapRecycleView extends RecyclerView.Adapter<TodoAdapRecycleVie
 
     private MyFragmentListener listener;
 
+    String IS_SOUND = "sound";
+
+    SharePerferenceManager perferenceManager;
 
 
 
     public TodoAdapRecycleView(Context context, ArrayList<HabitModel> arrayList) {
         this.context = context;
         this.arrayList = arrayList;
+        perferenceManager = new SharePerferenceManager(context);
     }
 
 
@@ -66,8 +71,12 @@ public class TodoAdapRecycleView extends RecyclerView.Adapter<TodoAdapRecycleVie
             @Override
             public void onClick(View view) {
 
-                final MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.click_sound);
-                mediaPlayer.start();
+                String isSound = perferenceManager.getData(IS_SOUND, "0");
+
+                if(!isSound.equals(("0"))){
+                    final MediaPlayer mediaPlayer = MediaPlayer.create(context, R.raw.click_sound);
+                    mediaPlayer.start();
+                }
 
                 HabitModel model = arrayList.get(position);
 

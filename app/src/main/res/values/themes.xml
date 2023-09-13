@@ -116,6 +116,12 @@
         parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bottom_sheet_rounded_corners</item>
     </style>
+    <style name="Theme.TodoManager.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.TodoManager.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.TodoManager.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 

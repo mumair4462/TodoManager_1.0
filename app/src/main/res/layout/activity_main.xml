@@ -11,16 +11,6 @@
 
     <include layout="@layout/app_bar_main"/>
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:id="@+id/navDrawable"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="start"-->
-<!--        android:fitsSystemWindows="true"-->
-<!--        app:itemIconTint="@color/white"-->
-<!--        app:headerLayout="@layout/nav_drawble_header"-->
-<!--        app:menu="@menu/nav_drawable_menu"/>-->
-
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

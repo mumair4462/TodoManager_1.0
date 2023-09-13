@@ -6,7 +6,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.circularreveal.CircularRevealFrameLayout;
 import com.google.android.material.navigation.NavigationView;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     CircularRevealFrameLayout frameLayout;
     Toolbar toolbar;
     NavigationView navigationView;
+
 
     int MAIN_FRAME_LAYOUT;
 
@@ -39,5 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
         constants.loadMainFragment(new HomeFragment(this), MAIN_FRAME_LAYOUT, true, false);
 
+    }
+
+    public void gotoSetting(View view) {
+        startActivity(new Intent(this, SettingActivity.class));
     }
 }
